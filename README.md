@@ -1,14 +1,17 @@
-# 🧠 Advanced SQL Project – Sales Analysis & Data Insights
+## 🧠 Advanced SQL Project – Sales Analysis & Data Insights
+---
 
 This project demonstrates the application of **advanced SQL techniques** to perform in-depth sales analysis and uncover business insights. The analysis includes handling `NULL` values, generating date series, and combining multiple tables to deliver accurate, actionable results.
 
-## 🔧 What’s Covered:
+### 🔧 What’s Covered:
+---
 - ✅ Sales data exploration and cleaning
 - ✅ Merging and transforming tables for comprehensive analysis
 - ✅ Generating dynamic date series for time-based metrics
 - ✅ Tackling incomplete data with smart handling of `NULL` values
 
-## 🧠 Advanced SQL Concepts Applied:
+### 🧠 Advanced SQL Concepts Applied:
+---
 ✔ `UNION` / `UNION ALL`  
 ✔ Subqueries  
 ✔ `LEFT JOIN` / `INNER JOIN`  
@@ -17,9 +20,9 @@ This project demonstrates the application of **advanced SQL techniques** to perf
 ✔ `CAST`, `COALESCE`, `ROUND`  
 ✔ Window Functions
 
-## Includes some advanced SQL queries like
-
-# FILL IN THE NULL VALUES (NULL FUNCTION, NUMERIC FUNCTION)
+### Includes some advanced SQL queries like
+---
+#### FILL IN THE NULL VALUES (NULL FUNCTION, NUMERIC FUNCTION)
 
 ```sql
 
@@ -36,7 +39,7 @@ FROM cte LEFT JOIN sales ON cte.dt=sales.dt;
 
 ```
 
-# updating sales values using window functions
+#### updating sales values using window functions
 
 ```sql
 
@@ -53,8 +56,8 @@ SELECT cte.dt, sales.num_sales,
 FROM cte LEFT JOIN sales ON cte.dt=sales.dt;
 
 ```
-# Results & Findings
-
+#### Results & Findings
+---
 Data Gap Handling:
 During our advanced SQL data analysis, we identified missing data for certain dates. 
 To address this, we imputed the gaps by calculating the average sales value using the preceding and following day's data, 
